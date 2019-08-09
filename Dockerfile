@@ -6,7 +6,7 @@ MAINTAINER Nyk Ma <i@nyk.ma>
 # WORKDIR /go
 
 RUN apk --no-cache add wget ca-certificates && \
-        wget https://github.com/leanote/leanote-all/archive/master.zip && \
+        wget https://github.com/PotatoChipsNinja/pcn-note/archive/master.zip && \
         unzip master.zip && \
         mv leanote-all-master/src ./ && \
         rm -r master.zip leanote-all-master /go/src/github.com/leanote/leanote/conf/app.conf && \

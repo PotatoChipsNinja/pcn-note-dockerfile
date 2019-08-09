@@ -1,10 +1,10 @@
 version: "2.1"
 services:
   leanote:
-    image: nykma/leanote:latest
-    # build:
-    #   context: .
-    #   dockerfile: Dockerfile
+    # image: nykma/leanote:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - "./conf/app.conf:/go/src/github.com/leanote/leanote/conf/app.conf"
       - './data/leanote/log:/var/log'
@@ -14,10 +14,10 @@ services:
       - mongo
 
   mongo:
-    image: nykma/leanote-mongodb:latest
-    # build:
-    #   context: .
-    #   dockerfile: Dockerfile.mongodb
+    # image: nykma/leanote-mongodb:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.mongodb
     entrypoint: "/bin/bash"
     command:
       - "/root/start-db.sh"
