@@ -7,7 +7,7 @@
 ## Build
 
 ```bash
-git clone https://github.com/nykma/leanote-dockerfile.git && cd leanote-dockerfile
+git clone https://github.com/PotatoChipsNinja/pcn-note-dockerfile.git && cd pcn-note-dockerfile
 docker-compose pull
 ```
 
