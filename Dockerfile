@@ -1,5 +1,5 @@
 FROM golang:1.11.2-alpine
-MAINTAINER Nyk Ma <i@nyk.ma>
+MAINTAINER PCNinja
 
 # golang:alpine :
 # ENV GOPATH /go
@@ -8,8 +8,8 @@ MAINTAINER Nyk Ma <i@nyk.ma>
 RUN apk --no-cache add wget ca-certificates && \
         wget https://github.com/PotatoChipsNinja/pcn-note/archive/master.zip && \
         unzip master.zip && \
-        mv leanote-all-master/src ./ && \
-        rm -r master.zip leanote-all-master /go/src/github.com/leanote/leanote/conf/app.conf && \
+        mv pcn-note-master/src ./ && \
+        rm -r master.zip pcn-note-master /go/src/github.com/leanote/leanote/conf/app.conf && \
         rm -r /go/src/github.com/leanote/leanote/mongodb_backup && \
         go install github.com/revel/cmd/revel
 
