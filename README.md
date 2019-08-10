@@ -8,7 +8,7 @@
 
 ```bash
 git clone https://github.com/PotatoChipsNinja/pcn-note-dockerfile.git && cd pcn-note-dockerfile
-docker-compose pull
+docker-compose build
 ```
 
 ## Preparation
